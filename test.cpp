@@ -61,10 +61,9 @@ public:
     double getMileage() const { return mileage; }
     bool getIsEngineRunning() const { return isEngineRunning; }
 
-    void setColor(std::string newColor) {
-        this->color = newColor;
-        std::cout << "Car color changed to: " << this->color << std::endl;
-    }
+    void setColor(const std::string & newColor)
+    {
+    	Car(const std::string & carMake, const std::string
 
     void startEngine() {
         if (!isEngineRunning) {
